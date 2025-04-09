@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author Asus
+ */
+public class Ejercicio_13 {
+    public static void main(String[] args) {
+        //Elabora un programa que solicite 8 números enteros por consola y que, al recorrer el arreglo, muestre cada número acompañado de la etiqueta 
+        //"par" o "impar" según corresponda, integrando el uso de condicionales para clasificar los números y la manipulación de arreglos.
+        
+        Scanner teclado = new Scanner(System.in);
+        int[] numeros = new int[8];
+        String[] evaluado = new String[8];
+
+        for (int i = 0; i < 8; i++) {
+            System.out.print("Ingrese el numero " + (i+1) + " del arreglo ");
+            numeros[i] = teclado.nextInt();
+            
+            if(numeros[i]>=0) {
+                evaluado[i]= "numero "+numeros[i]+" es positivo";
+            }
+            else{
+                evaluado[i]= "numero "+numeros[i]+" es negativo";
+            }
+        }
+        
+        System.out.println("\nLa evaluacion de los numeros es el siguiente");
+        for (int i = 0; i < 8; i++) {
+            System.out.println(evaluado[i]);
+        }
+    }
+}
