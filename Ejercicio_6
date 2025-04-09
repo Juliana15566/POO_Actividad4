@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author Asus
+ */
+public class Ejercicio_6 {
+     public static void main(String[] args) {
+        //Implementa un programa que determine la primera cifra de un número entero de hasta 5 dígitos ingresado por teclado, 
+        //ya sea convirtiendo el número a una cadena o mediante operaciones matemáticas, para practicar la manipulación de datos numéricos.
+        
+        int numero;
+        
+        Scanner teclado = new Scanner(System.in);
+        
+         System.out.println("Ingrese un numero de 5 digitos");
+         numero= teclado.nextInt();
+         
+         if(String.valueOf(numero).length()==5){
+             System.out.println("El primer digito del numero ingresado es el: "+(numero/10000));
+         }
+         else System.out.println("valor ingresado no validdo");
+    }
+}
