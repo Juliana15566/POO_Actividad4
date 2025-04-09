@@ -1,0 +1,17 @@
+public class Ejercicio_1 {
+    public static void main(String[] args) {
+        //Declara dos variables enteras, numeroA y numeroB, asignándoles los valores 89 y 323, y muestra en consola el valor de cada variable, además de la suma, resta, división 
+        //y multiplicación, lo que introduce conceptos básicos de declaración de variables y operaciones aritméticas en Java.
+        
+        int numeroA=89,numeroB=323;
+        
+        System.out.println("valor de la variable numeroA: "+numeroA);
+        System.out.println("valor de la variable numeroA: "+numeroB);
+        
+        System.out.println("\n La suma de los dos valores es: "+(numeroB+numeroA));
+        System.out.println("La resta de los dos valores es: "+(numeroB-numeroA));
+        System.out.println("La division de los dos valores es: "+(numeroB/numeroA));
+        System.out.println("La multiplicacion de los dos valores es: "+(numeroB*numeroA));       
+        
+    }
+}
