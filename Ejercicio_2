@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+
+public class Ejercicio_2 {
+    public static void main(String[] args) {
+        // Realiza un conversor de pesos a dólar en el que la cantidad en pesos esté almacenada en una variable y se utilice el valor fijo 
+        //de 1 dólar = $3.895, permitiendo practicar operaciones aritméticas y el manejo de tipos de datos decimales.
+        
+        float dolar=3895, pesos, conversion;
+        
+        Scanner teclado = new Scanner(System.in);
+        
+        System.out.println("Ingrese el valor de pesos a dolares");
+        pesos = teclado.nextFloat();
+        
+        conversion=pesos*dolar;
+        
+        System.out.println("La conversion de pesos a dolares es de: "+conversion);
+    }
+}
