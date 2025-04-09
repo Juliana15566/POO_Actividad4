@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author Asus
+ */
+public class Ejercicio_3 {
+    public static void main(String[] args) {
+        // Calcula el total de una factura a partir de la base de compra (precio sin IVA),
+        //mostrando en consola la base, el IVA calculado (aproximadamente el 19% de la base) y el total, aplicando conceptos de cálculo de impuestos y aritmética aplicada.
+        
+        float facturaBruta, facturaNeta;
+        
+        Scanner teclado = new Scanner(System.in);
+        
+        System.out.println("Ingrese el valor de la compra (Sin iva)");
+        facturaBruta = teclado.nextFloat();
+        
+        facturaNeta=(float) (facturaBruta*1.19);
+        
+        System.out.println("La facturacion de la compra es del: "+facturaNeta);
+    }
+}
